@@ -1,2 +1,2 @@
 # bedrock-protractor
-Bedrock Protractor-Based Test Framework
+Bedrock Protractor-based Test Framework
