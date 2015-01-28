@@ -1,0 +1,34 @@
+{
+  "name": "bedrock-protractor",
+  "version": "0.0.1",
+  "description": "Bedrock Protractor-based Test Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digitalbazaar/bedrock-protractor"
+  },
+  "keywords": [
+    "bedrock"
+  ],
+  "author": {
+    "name": "Digital Bazaar, Inc.",
+    "email": "support@digitalbazaar.com",
+    "url": "http://digitalbazaar.com"
+  },
+  "bugs": {
+    "url": "https://github.com/digitalbazaar/bedrock-protractor/issues"
+  },
+  "homepage": "https://github.com/digitalbazaar/bedrock-protractor",
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "bedrock": "~0.3.0"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "./lib/test"
+}
