@@ -1,6 +1,6 @@
 {
   "name": "bedrock-protractor",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Bedrock Protractor-based Test Framework",
   "main": "./lib/test",
   "scripts": {
@@ -33,7 +33,7 @@
   },
   "peerDependencies": {
     "bedrock": "~0.3.0",
-    "bedrock-server": "~0.0.1"
+    "bedrock-server": "~0.1.0"
   },
   "directories": {
     "lib": "./lib"
