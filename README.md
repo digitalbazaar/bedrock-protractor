@@ -7,7 +7,9 @@ AngularJS applications with [bedrock][].
 
 ```
 npm install bedrock-protractor
+```
 
+```js
 var bedrock = require('bedrock');
 var cfg = bedrock.config.protractor.config;
 
