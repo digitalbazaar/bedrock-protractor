@@ -18,7 +18,9 @@ cfg.suites['bedrock-foo'] = '/foo/test/tests/**/*.js';
 
 // add a script to run to define helper functions prior to tests
 cfg.params.config.onPrepare.push('/foo/test/helpers/bar.js';
+```
 
+```
 // run the tests on the command line
 node myproject.js test --framework protractor
 ```
