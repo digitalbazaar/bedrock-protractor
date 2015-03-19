@@ -27,6 +27,10 @@ node myproject.js test --framework protractor
 
 TODO
 
+## Setup
+
+1. Install openjdk-7-jdk.
+
 ## Configuration
 
 TODO
