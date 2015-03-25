@@ -20,24 +20,20 @@ cfg.suites['bedrock-foo'] = '/foo/test/tests/**/*.js';
 cfg.params.config.onPrepare.push('/foo/test/helpers/bar.js';
 ```
 
+To run tests on the command line:
+
 ```
-// run the tests on the command line
 node myproject.js test --framework protractor
 ```
 
-TODO
-
 ## Setup
 
-1. Install openjdk-7-jdk.
+1. For debian-based systems (eg: Ubuntu), install openjdk-7-jdk.
 
 ## Configuration
 
-TODO
+For more documentation on configuration, see [config.js](https://github.com/digitalbazaar/bedrock-protractor/blob/master/lib/config.js).
 
-## How It Works
-
-TODO
 
 [bedrock]: https://github.com/digitalbazaar/bedrock
 [protractor]: https://github.com/angular/protractor
