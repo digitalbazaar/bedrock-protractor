@@ -32,7 +32,7 @@ node myproject.js test --framework protractor
 
 ## Configuration
 
-For more documentation on configuration, see [config.js](https://github.com/digitalbazaar/bedrock-protractor/blob/master/lib/config.js).
+For more documentation on configuration, see [config.js](./lib/config.js).
 
 
 [bedrock]: https://github.com/digitalbazaar/bedrock
