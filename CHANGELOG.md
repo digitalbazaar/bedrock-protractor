@@ -6,6 +6,9 @@
 - `--protractor-chrome-binary` option to more easily test different
   chrome/chromium versions.
 
+### Changed
+- **BREAKING**: Use protractor `2.x`.
+
 ## [1.0.0] - 2015-04-08
 
 ## 0.1.0 (up to early 2015)

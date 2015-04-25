@@ -1,6 +1,6 @@
 {
   "name": "bedrock-protractor",
-  "version": "1.0.1-dev",
+  "version": "2.0.0-dev",
   "description": "Bedrock Protractor-based Test Framework",
   "main": "./lib/test",
   "scripts": {
@@ -24,10 +24,10 @@
   },
   "homepage": "https://github.com/digitalbazaar/bedrock-protractor",
   "dependencies": {
-    "chai": "~1.10.0",
-    "chai-as-promised": "~4.1.1",
+    "chai": "~2.2.0",
+    "chai-as-promised": "~5.0.0",
     "mocha": "~2.1.0",
-    "protractor": "~1.4.0",
+    "protractor": "^2.0.0",
     "temp": "~0.8.1",
     "underscore": "~1.7.0"
   },
