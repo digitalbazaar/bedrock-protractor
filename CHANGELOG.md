@@ -5,6 +5,7 @@
 ### Added
 - `--protractor-chrome-binary` option to more easily test different
   chrome/chromium versions.
+- `--protractor-troubleshoot` option to help debug protractor issues.
 
 ### Changed
 - **BREAKING**: Use protractor `2.x`.
