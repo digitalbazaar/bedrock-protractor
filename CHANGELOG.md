@@ -5,10 +5,13 @@
 ### Added
 - `--protractor-chrome-binary` option to more easily test different
   chrome/chromium versions.
+- `--protractor-firefox-binary` option to more easily test different
+  chrome/chromium versions.
 - `--protractor-troubleshoot` option to help debug protractor issues.
 
 ### Changed
 - **BREAKING**: Use protractor `2.x`.
+- Use `directConnect` mode for chrome and firefox.
 
 ## [1.0.0] - 2015-04-08
 
