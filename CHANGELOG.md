@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [2.0.0] - 2015-05-07
+
 ### Added
 - `--protractor-chrome-binary` option to more easily test different
   chrome/chromium versions.
@@ -19,5 +21,6 @@
 
 - See git history for changes.
 
-[Unreleased]: https://github.com/digitalbazaar/bedrock-protractor/compare/1.0.0...HEAD
+[Unreleased]: https://github.com/digitalbazaar/bedrock-protractor/compare/2.0.0...HEAD
+[2.0.0]: https://github.com/digitalbazaar/bedrock-protractor/compare/1.0.0...2.0.0
 [1.0.0]: https://github.com/digitalbazaar/bedrock-protractor/compare/0.1.0...1.0.0
