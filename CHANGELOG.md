@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+## [2.1.0] - 2015-06-12
+
+### Added
+- `bedrock.testInBrowser()` feature to allow running mocha tests directly in
+  the browser. `mocha` must be available in the environment (ie: install it
+  via bower).
+
 ## [2.0.0] - 2015-05-07
 
 ### Added
@@ -21,6 +28,7 @@
 
 - See git history for changes.
 
-[Unreleased]: https://github.com/digitalbazaar/bedrock-protractor/compare/2.0.0...HEAD
+[Unreleased]: https://github.com/digitalbazaar/bedrock-protractor/compare/2.1.0...HEAD
+[2.1.0]: https://github.com/digitalbazaar/bedrock-protractor/compare/2.0.0...2.1.0
 [2.0.0]: https://github.com/digitalbazaar/bedrock-protractor/compare/1.0.0...2.0.0
 [1.0.0]: https://github.com/digitalbazaar/bedrock-protractor/compare/0.1.0...1.0.0
