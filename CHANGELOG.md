@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [2.1.1] - 2015-07-08
+
+### Changed
+- Provide tighter integration with browser-based mocha. Now browser-based
+  tests should properly nest into the parent test suite.
+
 ## [2.1.0] - 2015-06-12
 
 ### Added
@@ -28,7 +34,8 @@
 
 - See git history for changes.
 
-[Unreleased]: https://github.com/digitalbazaar/bedrock-protractor/compare/2.1.0...HEAD
+[Unreleased]: https://github.com/digitalbazaar/bedrock-protractor/compare/2.1.1...HEAD
+[2.1.1]: https://github.com/digitalbazaar/bedrock-protractor/compare/2.1.0...2.1.1
 [2.1.0]: https://github.com/digitalbazaar/bedrock-protractor/compare/2.0.0...2.1.0
 [2.0.0]: https://github.com/digitalbazaar/bedrock-protractor/compare/1.0.0...2.0.0
 [1.0.0]: https://github.com/digitalbazaar/bedrock-protractor/compare/0.1.0...1.0.0
