@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [2.2.0] - 2015-10-21
+
+### Added
+- Make `chai`, `expect`, and `should` globally available in
+  any in-browser tests.
+
 ## [2.1.1] - 2015-07-08
 
 ### Changed
@@ -34,7 +40,8 @@
 
 - See git history for changes.
 
-[Unreleased]: https://github.com/digitalbazaar/bedrock-protractor/compare/2.1.1...HEAD
+[Unreleased]: https://github.com/digitalbazaar/bedrock-protractor/compare/2.2.0...HEAD
+[2.2.0]: https://github.com/digitalbazaar/bedrock-protractor/compare/2.1.1...2.2.0
 [2.1.1]: https://github.com/digitalbazaar/bedrock-protractor/compare/2.1.0...2.1.1
 [2.1.0]: https://github.com/digitalbazaar/bedrock-protractor/compare/2.0.0...2.1.0
 [2.0.0]: https://github.com/digitalbazaar/bedrock-protractor/compare/1.0.0...2.0.0
