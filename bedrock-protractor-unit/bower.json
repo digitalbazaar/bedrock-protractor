@@ -1,0 +1,19 @@
+{
+  "name": "bedrock-protractor-unit",
+  "version": "0.0.1",
+  "moduleType": [
+    "amd"
+  ],
+  "private": true,
+  "main": [
+    "./main.js"
+  ],
+  "description": "Bedrock Protractor Unit Tester.",
+  "dependencies": {
+    "angular": "^1.3.0",
+    "bedrock-angular": "^1.4.4",
+    "chai": "^3.0.0",
+    "chai-as-promised": "^5.1.0",
+    "mocha": "^2.2.5"
+  }
+}
