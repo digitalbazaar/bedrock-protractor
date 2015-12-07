@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## [2.3.0] - 2015-12-06
+
+### Added
+- `bedrock.unit(bootstrap)` method to replace `bedrock.testInBrowser`. This new
+  call executes mocha unit tests in the browser, but ensures that the angular
+  application is not bootstrapped until a test begins or until the first test
+  executes or until requested by the test author.
+
 ## [2.2.0] - 2015-10-21
 
 ### Added
@@ -40,7 +48,8 @@
 
 - See git history for changes.
 
-[Unreleased]: https://github.com/digitalbazaar/bedrock-protractor/compare/2.2.0...HEAD
+[Unreleased]: https://github.com/digitalbazaar/bedrock-protractor/compare/2.3.0...HEAD
+[2.3.0]: https://github.com/digitalbazaar/bedrock-protractor/compare/2.2.0...2.3.0
 [2.2.0]: https://github.com/digitalbazaar/bedrock-protractor/compare/2.1.1...2.2.0
 [2.1.1]: https://github.com/digitalbazaar/bedrock-protractor/compare/2.1.0...2.1.1
 [2.1.0]: https://github.com/digitalbazaar/bedrock-protractor/compare/2.0.0...2.1.0
