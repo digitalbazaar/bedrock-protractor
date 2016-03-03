@@ -3,6 +3,10 @@
 A [bedrock][] module that integrates the [protractor][] test framework for
 AngularJS applications with [bedrock][].
 
+## Requirements
+
+- npm v3+
+
 ## Quick Examples
 
 ```
