@@ -1,6 +1,6 @@
 {
   "name": "bedrock-protractor",
-  "version": "3.0.1-dev",
+  "version": "3.0.1",
   "description": "Bedrock Protractor-based Test Framework",
   "main": "./lib/test",
   "scripts": {
