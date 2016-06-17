@@ -1,5 +1,10 @@
 # bedrock-protractor ChangeLog
 
+## 3.1.1 - 2016-06-17
+
+### Fixed
+- Update protractor binary path.
+
 ## 3.1.0 - 2016-06-17
 
 ### Changed
