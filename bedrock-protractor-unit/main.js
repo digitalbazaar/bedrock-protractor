@@ -38,6 +38,11 @@ function getQueryParam(name) {
 function run(root, fn, callback) {
   var result = {};
   if(typeof mocha === 'undefined') {
+    result.root = {
+      title: '',
+      error: '`mocha` is not defined in the browser; please ensure it ' +
+        'is installed.'
+    };
     return callback(result);
   }
 

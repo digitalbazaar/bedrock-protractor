@@ -10,8 +10,7 @@
   ],
   "description": "Bedrock Protractor Unit Tester.",
   "dependencies": {
-    "angular": "^1.3.0",
-    "bedrock-angular": "^1.4.4",
+    "bedrock-angular": "^2.0.0",
     "chai": "^3.0.0",
     "chai-as-promised": "^5.1.0",
     "mocha": "^2.2.5"
