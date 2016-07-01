@@ -1,5 +1,9 @@
 # bedrock-protractor ChangeLog
 
+### Fixed
+- Ensure correct version of mocha is patched to
+  allow in-browser unit tests to run.
+
 ## 3.1.1 - 2016-06-17
 
 ### Fixed
