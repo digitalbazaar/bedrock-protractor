@@ -40,8 +40,8 @@ function run(root, fn, callback) {
   if(typeof mocha === 'undefined') {
     result.root = {
       title: '',
-      error: '`mocha` is not defined in the browser; please ensure it ' +
-        'is installed.'
+      error: '`mocha` is not defined in the browser; it must be installed ' +
+        'to run unit tests in the browser.'
     };
     return callback(result);
   }
