@@ -1,8 +1,9 @@
 # bedrock-protractor ChangeLog
 
 ### Fixed
-- Ensure correct version of mocha is patched to
-  allow in-browser unit tests to run.
+- Ensure correct version of mocha is patched to allow in-browser unit
+  unit tests to run.
+- Fix race condition when loading in-browser unit test runner.
 
 ## 3.1.1 - 2016-06-17
 
