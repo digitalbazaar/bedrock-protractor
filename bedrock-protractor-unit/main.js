@@ -5,22 +5,51 @@
  *
  * @author Dave Longley
  */
-define(['angular', 'chai', 'chai-as-promised', 'bedrock-angular'], function(
-  angular, chai, chaiAsPromised, brAngular) {
+define([
+  'angular', 'chai', 'chai-as-promised', 'bedrock-angular', 'requirejs/events'],
+  function(angular, chai, chaiAsPromised, brAngular, events) {
 
 'use strict';
 
 var started = false;
 
-if(getQueryParam('bedrock-protractor-unit') === 'true') {
+// disable bedrock-angular auto-start (all code in this `define` block
+// this will always execute before `bedrock-requirejs.ready` event is
+// emitted -- which is the event that will auto-start brAngular unless
+// we configure it otherwise here)
+if(window.location.pathname === '/bedrock-protractor-unit') {
   brAngular.config.autostart = false;
 } else {
   started = true;
 }
 
+// unit test runner, to be set when `api.run` is called
+var runTests = null;
+
+// track when unit tests are ready to run
+var ready = false;
+events.on('bedrock-requirejs.ready', function() {
+  ready = true;
+  if(runTests) {
+    // `runTests` already set, run it
+    runTests();
+  }
+});
+
 // add attribute to html element for protractor to track
 angular.element(document).ready(function() {
   angular.element('html').attr('bedrock-protractor-unit', 'true');
+});
+
+// register test route
+var module = angular.module('bedrock-protractor-unit', []);
+/* @ngInject */
+module.config(function($routeProvider) {
+  $routeProvider
+    .when('/bedrock-protractor-unit', {
+      title: 'bedrock-protractor unit tests',
+      template: ''
+    });
 });
 
 // export `run` API
@@ -28,43 +57,43 @@ var api = {};
 api.run = run;
 return api;
 
-// get a URL query param by name
-function getQueryParam(name) {
-  var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
-  return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
-}
-
 // run a custom unit test script
 function run(root, fn, callback) {
-  var result = {};
-  if(typeof mocha === 'undefined') {
-    result.root = {
-      title: '',
-      error: '`mocha` is not defined in the browser; it must be installed ' +
-        'to run unit tests in the browser.'
-    };
-    return callback(result);
+  runTests = function() {
+    var result = {};
+    if(typeof mocha === 'undefined') {
+      result.root = {
+        title: '',
+        error: '`mocha` is not defined in the browser; it must be installed ' +
+          'to run unit tests in the browser.'
+      };
+      return callback(result);
+    }
+
+    var reporter = createReporter(result);
+    mocha.setup.call(mocha, {ui: 'bdd', reporter: reporter});
+
+    // setup globals
+    window.chai = chai;
+    chai.use(chaiAsPromised);
+
+    window.expect = chai.expect;
+    window.should = chai.should();
+
+    // call custom script, pass function to bootstrap app and return $injector
+    eval(fn)(function() {
+      bootstrap();
+      return angular.element(root).data('$injector');
+    });
+
+    mocha.run(function() {
+      callback(result);
+    });
+  };
+  // if already ready, run tests
+  if(ready) {
+    runTests();
   }
-
-  var reporter = createReporter(result);
-  mocha.setup.call(mocha, {ui: 'bdd', reporter: reporter});
-
-  // setup globals
-  window.chai = chai;
-  chai.use(chaiAsPromised);
-
-  window.expect = chai.expect;
-  window.should = chai.should();
-
-  // call custom script, pass function to bootstrap app and return $injector
-  eval(fn)(function() {
-    bootstrap();
-    return angular.element(root).data('$injector');
-  });
-
-  mocha.run(function() {
-    callback(result);
-  });
 }
 
 // bootstrap the angular app
