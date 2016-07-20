@@ -1,5 +1,10 @@
 # bedrock-protractor ChangeLog
 
+## 3.1.3 - 2016-07-20
+
+### Changed
+- Replace deprecated `GLOBAL` with `global`.
+
 ## 3.1.2 - 2016-07-07
 
 ### Fixed
