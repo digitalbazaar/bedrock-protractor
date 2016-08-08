@@ -1,5 +1,14 @@
 # bedrock-protractor ChangeLog
 
+## 3.2.0 - 2016-08-08
+
+### Added
+- Add additional helpers.
+- Add command line options for Sauce Labs.
+
+### Changed
+- Upgrade to Protractor 4.x.
+
 ## 3.1.3 - 2016-07-20
 
 ### Changed
