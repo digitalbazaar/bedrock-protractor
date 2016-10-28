@@ -1,5 +1,10 @@
 # bedrock-protractor ChangeLog
 
+## 3.3.0 - 2016-10-28
+
+### Added
+- Enhanced support for Sauce Labs.
+
 ## 3.2.0 - 2016-08-08
 
 ### Added
