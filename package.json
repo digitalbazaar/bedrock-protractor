@@ -24,10 +24,10 @@
   },
   "homepage": "https://github.com/digitalbazaar/bedrock-protractor",
   "dependencies": {
-    "chai": "^3.4.0",
+    "chai": "^4.0.0",
     "chai-as-promised": "^5.1.0",
     "lodash": "^4.3.0",
-    "mocha": "^3.2.0",
+    "mocha": "^3.3.0",
     "protractor": "^5.0.0",
     "temp": "~0.8.1"
   },
