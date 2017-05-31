@@ -5,8 +5,6 @@
  *
  * @author Dave Longley
  */
-'use strict';
-
 import angular from 'angular';
 import chai from 'chai';
 import chaiAsPromised from 'chai-as-promised';

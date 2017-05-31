@@ -2,7 +2,7 @@
   "name": "bedrock-protractor",
   "version": "3.3.1-0",
   "description": "Bedrock Protractor-based Test Framework",
-  "main": "./lib/test",
+  "main": "lib",
   "scripts": {
     "postinstall": "webdriver-manager update",
     "postupdate": "webdriver-manager update"
@@ -24,17 +24,16 @@
   },
   "homepage": "https://github.com/digitalbazaar/bedrock-protractor",
   "dependencies": {
-    "chai": "^4.0.0",
-    "chai-as-promised": "^5.1.0",
+    "chai": "^4.1.0",
+    "chai-as-promised": "^7.1.1",
     "lodash": "^4.3.0",
-    "mocha": "^3.3.0",
-    "protractor": "^5.0.0",
+    "mocha": "^3.4.2",
+    "protractor": "^5.1.2",
     "temp": "~0.8.1"
   },
   "peerDependencies": {
     "bedrock": "^1.0.0",
     "bedrock-express": "^2.0.0",
-    "bedrock-requirejs": "^2.0.2",
     "bedrock-server": "^2.0.0",
     "bedrock-views": "^4.0.0"
   },
