@@ -3,6 +3,7 @@
   "version": "3.3.1-0",
   "description": "Bedrock Protractor-based Test Framework",
   "main": "lib",
+  "browser": false,
   "scripts": {
     "postinstall": "webdriver-manager update",
     "postupdate": "webdriver-manager update"
@@ -35,7 +36,33 @@
     "bedrock": "^1.6.0",
     "bedrock-express": "^2.0.0",
     "bedrock-server": "^2.0.0",
-    "bedrock-views": "^5.1.0"
+    "bedrock-views": "digitalbazaar/bedrock-views#overrideDeps"
+  },
+  "bedrock": {
+    "browserDependencies": [
+      "chai",
+      "chai-as-promised",
+      "mocha"
+    ],
+    "manifest": {
+      "chai": {
+        "browser": "chai.js"
+      },
+      "chai-as-promised": {
+        "browserDependencies": [
+          "check-error"
+        ]
+      }
+    },
+    "systemjs": {
+      "packages": {
+        "mocha": {
+          "format": "global",
+          "defaultExtension": "js",
+          "main": "mocha.js"
+        }
+      }
+    }
   },
   "directories": {
     "lib": "./lib"
