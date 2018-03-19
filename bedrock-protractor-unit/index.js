@@ -118,7 +118,7 @@ function createReporter(result) {
       // angular app is automatically bootstrapped prior to tests running;
       // if there are hooks, ensure the angular app is auto bootstrapped
       // after they are called but prior to test execution
-      const hooks = (test.parent['_beforeAll'] || []).concat(
+      let hooks = (test.parent['_beforeAll'] || []).concat(
         test.parent['_beforeEach'] || []).length;
       //if(hooks === 0 && !bootstrapped) {
       if(hooks === 0) {
