@@ -1,7 +1,7 @@
 /*!
  * Bedrock Protractor Unit Tests module.
  *
- * Copyright (c) 2015-2017 Digital Bazaar, Inc. All rights reserved.
+ * Copyright (c) 2015-2018 Digital Bazaar, Inc. All rights reserved.
  *
  * @author Dave Longley
  */

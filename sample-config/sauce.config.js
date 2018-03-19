@@ -1,6 +1,7 @@
 /*
- * Copyright (c) 2016 Digital Bazaar, Inc. All rights reserved.
+ * Copyright (c) 2016-2018 Digital Bazaar, Inc. All rights reserved.
  */
+'use strict';
 
 module.exports = function(bedrock) {
   bedrock.config.protractor.config.multiCapabilities.push({
