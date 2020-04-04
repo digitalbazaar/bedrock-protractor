@@ -27,7 +27,7 @@
     "chai": "^3.4.0",
     "chai-as-promised": "^5.1.0",
     "lodash": "^4.3.0",
-    "mocha": "^2.3.0",
+    "mocha": "^6.0.0",
     "protractor": "^4.0.0",
     "temp": "~0.8.1"
   },
