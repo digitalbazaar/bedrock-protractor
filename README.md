@@ -1,3 +1,5 @@
+# This module is EOL.
+
 # bedrock-protractor
 
 A [bedrock][] module that integrates the [protractor][] test framework for
